@@ -1,5 +1,4 @@
-column table "db/src/transacoes_cartoes"
+column table "db/src::transacoes_cartoes"
 (
- "id" BIGINT   ,
- "nome" VARCHAR(30)   )
+ "id_tran" BIGINT   )
 
