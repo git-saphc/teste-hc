@@ -1,0 +1,5 @@
+column table "db/src/transacoes_cartoes"
+(
+ "id" BIGINT   ,
+ "nome" VARCHAR(30)   )
+
