@@ -1,0 +1,7 @@
+entity "Transacoes_Cartoes" {
+   "id_transacao" : Bigint;
+   "nome"         : varchar(30);
+}
+technical configuration {
+   column store;
+};

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CVTransacoes_Cartoes" applyPrivilegeType="NONE" dataCategory="CUBE" dimensionType="" schemaVersion="3.0" defaultClient="$$client$$" visibility="reportingEnabled" outputViewType="Aggregation" calculationScenarioType="TREE_BASED" cacheInvalidationPeriod="DAILY" enforceSqlExecution="false">
+<descriptions defaultDescription="CVTransacoes_Cartoes" />
+<localVariables />
+<variableMappings />
+<dataSources>
+<DataSource id="DataSource_Transacoes_Cartoes">
+<resourceUri>Transacoes_Cartoes</resourceUri>
+</DataSource>
+</dataSources>
+<calculationViews />
+<logicalModel id="DataSource_Transacoes_Cartoes">
+<attributes>
+<attribute id="id_transacao" order="1" attributeHierarchyActive="false" displayAttribute="false">
+<descriptions defaultDescription="id_transacao" />
+<keyMapping columnObjectName="DataSource_Transacoes_Cartoes" columnName="id_transacao" />
+</attribute>
+<attribute id="nome" order="2" attributeHierarchyActive="false" displayAttribute="false">
+<descriptions defaultDescription="nome" />
+<keyMapping columnObjectName="DataSource_Transacoes_Cartoes" columnName="nome" />
+</attribute>
+</attributes>
+<calculatedAttributes />
+<baseMeasures />
+<calculatedMeasures />
+<restrictedMeasures />
+<localDimensions />
+</logicalModel>
+<layout>
+<shapes>
+<shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+<upperLeftCorner x="40" y="85" />
+</shape>
+</shapes>
+</layout>
+</Calculation:scenario>
