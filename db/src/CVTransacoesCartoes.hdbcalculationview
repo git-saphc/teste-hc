@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="db/src::CVtransacoesCartoes" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="" schemaVersion="3.0" defaultClient="$$client$$" visibility="reportingEnabled" outputViewType="Aggregation" calculationScenarioType="TREE_BASED" cacheInvalidationPeriod="DAILY" enforceSqlExecution="false">
-<descriptions defaultDescription="CVtransacoesCartoes" />
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="demo::CVtransacoescartoes" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="" schemaVersion="3.0" defaultClient="$$client$$" visibility="reportingEnabled" outputViewType="Aggregation" calculationScenarioType="TREE_BASED" cacheInvalidationPeriod="DAILY" enforceSqlExecution="false">
+<descriptions defaultDescription="CVtransacoescartoes" />
 <localVariables />
 <variableMappings />
 <dataSources>
 <DataSource id="DataSource_transacoes_cartoes">
-<resourceUri>db/src::transacoes_cartoes</resourceUri>
+<resourceUri>demo::transacoes_cartoes</resourceUri>
 </DataSource>
 </dataSources>
 <calculationViews />
 <logicalModel id="DataSource_transacoes_cartoes">
 <attributes>
-<attribute id="id_tran" order="1" attributeHierarchyActive="false" displayAttribute="false">
-<descriptions defaultDescription="id_tran" />
-<keyMapping columnObjectName="DataSource_transacoes_cartoes" columnName="id_tran" />
+<attribute id="id_transacao" order="1" attributeHierarchyActive="false" displayAttribute="false">
+<descriptions defaultDescription="id_transacao" />
+<keyMapping columnObjectName="DataSource_transacoes_cartoes" columnName="id_transacao" />
+</attribute>
+<attribute id="nome" order="2" attributeHierarchyActive="false" displayAttribute="false">
+<descriptions defaultDescription="nome" />
+<keyMapping columnObjectName="DataSource_transacoes_cartoes" columnName="nome" />
 </attribute>
 </attributes>
 <calculatedAttributes />
